@@ -1,10 +1,10 @@
 const sections = document.querySelectorAll('.section');
 const secBtns = document.querySelectorAll('.controls');
 const secBtn = document.querySelectorAll('.control');
-const allSections = document.querySelectorAll('.main-content');
+const allSections = document.querySelectorAll('.main-content')[0];
 
 
-function PageTransiions(){
+function PageTransitions(){
     //Button click active class
     for(let i =0; i < secBtn.length; i++){
         secBtn[1].addEventListener('click', function (){
@@ -35,4 +35,4 @@ function PageTransiions(){
     })
 }
 
-PageTransiions();
+PageTransitions();
